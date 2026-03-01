@@ -1,0 +1,222 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.parent{
+    background-color: rgb(0, 103, 103);
+    padding: 25px 0;
+    min-height: 100vh;
+}
+
+ul{
+    display: grid;
+    grid-template-columns: repeat(5 , 1fr);
+    gap: 60px;
+    background-color: #1641cf9e;
+    list-style: none;
+    padding: 20px;
+}
+
+#search{
+    width: 250px;
+    padding: 10px;
+    border: 0;
+    outline: 0;
+    border-radius: 8px;
+}
+
+.cont-sear{
+    width: fit-content;
+    margin: auto;
+    padding: 0 0 30px 0;
+}
+
+.img1{
+    width: 200px;
+    height: 250px;
+    background: url(../imgs/iphone\ x.jpg) bottom / cover;
+}
+.img2{
+    width: 200px;
+    height: 250px;
+    background: url(../imgs/iphone\ 11.jpg) center / cover;
+}
+.img3{
+    width: 200px;
+    height: 250px;
+    background: url(../imgs/Samsung\ s\ 22.jpg) center / cover;
+}
+.img4{
+    width: 200px;
+    height: 250px;
+    background: url(../imgs/oppo\ reno\ 8\ pro.jpg) center / cover;
+}
+.img5{
+    width: 200px;
+    height: 250px;
+    background: url(../imgs/iphone\ 15\ pro\ max.jpg) center / cover;
+}
+.img{
+    border-radius: 20px;
+}
+.img:hover{
+    scale: 1.05;
+}
+
+.name{
+    width: fit-content;
+    padding: 5px 30px 5px 5px;
+    background-color: aqua;
+    border: 2px solid black;
+    border-radius: 8px;
+    font-weight: 900;
+    margin: 10px 0;
+    font-size: 17px;
+}
+
+.price{
+    width: fit-content;
+    background-color: #010ea8;
+    color: white;
+    padding: 5px;
+    font-weight: 900;
+    border-radius: 7px;
+}
+
+.shop{
+    width: 100px;
+    padding: 5px 0;
+    font-weight: 900;
+    font-size: 16px;
+    border-radius: 20px;
+    background-color: black;
+    color: aqua;
+    border: solid aqua;
+    margin-top: 15px;
+}
+.shop:hover{
+    scale: 1.07;
+    box-shadow: 0px 0px 7px 2px  aqua ;
+}
+
+#cart{
+    width: 200px;
+    min-height: 25px;
+    background-color: black;
+    padding: 5px;
+    text-align: center;
+    font-weight: 900;
+    font-size: 18px;
+    color: aqua;
+    border: 3px solid aqua;
+    border-radius: 20px;
+    margin: 15px auto;
+    display: none;
+}
+
+#contBtn{
+    width: fit-content;
+    padding: 10px;
+    /* background-color: darkblue; */
+    margin: auto;
+    display: none;
+}
+
+#clear{
+    width: 80px;
+    padding: 5px;
+    background-color: red;
+    color: white;
+    font-weight: 900;
+    border: 2px solid white;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+#showPrice{
+    width: 125px;
+    padding: 7px;
+    background-color: blue;
+    color: white;
+    font-weight: 900;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+
+#clear:hover{
+    scale: 1.06;
+    box-shadow: 0px 0px 7px 2px  red;
+}
+#showPrice:hover{
+    scale: 1.05;
+    box-shadow: 0px 0px 7px 2px  blue;
+}
+
+#cartPrice{
+    width: fit-content;
+    /* height: 20px; */
+    padding: 7px 20px 7px 7px;
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+    margin: auto;
+    border-radius: 7px;
+    border: 2px solid white;
+    font-weight: 900;
+    font-size: 16px;
+    display: none;
+}
+
+#error{
+    width: 100vw;
+    display: none;
+    color: red;
+    font-weight: 900;
+    font-size: 20px;
+    text-align: center;
+    margin: auto;
+    position: absolute;
+}
+
+li{
+    margin: auto;
+}
+
+
+
+@media(max-width : 1180px){
+    ul{
+        display: grid;
+        grid-template-columns: repeat(3 , 1fr);
+    }
+    #cartPrice{
+        margin-bottom: 10px;
+    }
+}
+
+@media(max-width : 768px){
+    ul{
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr);
+    }
+    #cartPrice{
+        margin-bottom: 10px;
+    }
+}
+
+@media(max-width : 567px){
+    ul{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    li{
+        margin: auto;
+    }
+    #cartPrice{
+        margin-bottom: 10px;
+    }
+}
